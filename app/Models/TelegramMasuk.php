@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class TelegramMasuk extends Model
 {
+    protected $table = "telegram_masuk";
     protected $guarded = ['id'];
 
     use HasFactory;

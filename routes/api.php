@@ -8,8 +8,8 @@ use App\Http\Controllers\KonisController;
 use App\Http\Controllers\SpektekController;
 use App\Http\Controllers\PeralatanController;
 use App\Http\Controllers\PeminjamanController;
-use App\Http\Controllers\SuratmasukController;
-use App\Http\Controllers\SuratkeluarController;
+use App\Http\Controllers\TelegramMasukController;
+use App\Http\Controllers\TelegramKeluarController;
 use App\Http\Controllers\PemeliharaanController;
 
 /*
@@ -63,15 +63,15 @@ Route::post('/peralatan_diluar/update/{peralatan}', [PeralatanController::class,
 Route::delete('/peralatan_diluar/delete/{peralatan}', [PeralatanController::class, 'destroy']);
 
 //Surat masuk
-Route::get('/suratMasuk', [SuratmasukController::class, 'index']);
-Route::post('/suratMasuk/add', [SuratmasukController::class, 'store']);
-Route::get('/suratMasuk/{suratmasuk}', [SuratmasukController::class, 'show']);
-Route::post('/suratMasuk/update/{suratmasuk}', [SuratmasukController::class, 'update']);
-Route::delete('/suratMasuk/delete/{suratmasuk}', [SuratmasukController::class, 'destroy']);
+Route::get('/suratMasuk', [TelegramMasukController::class, 'index']);
+Route::post('/suratMasuk/add', [TelegramMasukController::class, 'store']);
+Route::get('/suratMasuk/{suratmasuk}', [TelegramMasukController::class, 'show']);
+Route::post('/suratMasuk/update/{suratmasuk}', [TelegramMasukController::class, 'update']);
+Route::delete('/suratMasuk/delete/{suratmasuk}', [TelegramMasukController::class, 'destroy']);
 
 //Surat Keluar
-Route::get('/suratkeluar', [SuratkeluarController::class, 'index']);
-Route::post('/suratkeluar/add', [SuratkeluarController::class, 'store']);
-Route::get('/suratkeluar/{suratkeluar}', [SuratkeluarController::class, 'show']);
-Route::post('/suratkeluar/update/{suratkeluar}', [SuratkeluarController::class, 'update']);
-Route::delete('/suratkeluar/delete/{suratkeluar}', [SuratkeluarController::class, 'destroy']);
+Route::get('/suratkeluar', [TelegramKeluarController::class, 'index']);
+Route::post('/suratkeluar/add', [TelegramKeluarController::class, 'store']);
+Route::get('/suratkeluar/{suratkeluar}', [TelegramKeluarController::class, 'show']);
+Route::post('/suratkeluar/update/{suratkeluar}', [TelegramKeluarController::class, 'update']);
+Route::delete('/suratkeluar/delete/{suratkeluar}', [TelegramKeluarController::class, 'destroy']);

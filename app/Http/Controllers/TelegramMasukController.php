@@ -32,7 +32,7 @@ class TelegramMasukController extends Controller
             'tembusan' => 'required',
             'klasifikasi' => 'required',
             'jenis_telegram' => 'required',
-            'no' => 'required',
+            'no' => '',
             'tanggal_waktu_penunjukan' => 'required',
             'isi' => 'required'
         ]);

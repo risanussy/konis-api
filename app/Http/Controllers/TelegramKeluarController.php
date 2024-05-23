@@ -28,7 +28,6 @@ class TelegramKeluarController extends Controller
         $data = $request->validate([
             'dari' => 'required',
             'kepada' => 'required',
-            'tanggal_masuk' => 'required',
             'tembusan' => 'required',
             'klasifikasi' => 'required',
             'jenis_telegram' => 'required',
